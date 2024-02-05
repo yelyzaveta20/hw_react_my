@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import SimpsonsFamily from "./components/Simpsons/SimpsonsFamily";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+          <SimpsonsFamily name={'Homer'} img={'https://upload.wikimedia.org/wikipedia/ru/b/bd/Homer_Simpson.png'}/>
+          <SimpsonsFamily name={'Margery'} img={'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}/>
+          <SimpsonsFamily name={'Bartholomew'} img={'https://upload.wikimedia.org/wikipedia/ru/2/29/Bart_Simpson.gif'}/>
+          <SimpsonsFamily name={'Lisa-Marie'} img={'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}/>
+          <SimpsonsFamily name={'Margaret-Evelyn "Maggie"'} img={'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'}/>
+
+      </div>
   );
 }
-
 export default App;
