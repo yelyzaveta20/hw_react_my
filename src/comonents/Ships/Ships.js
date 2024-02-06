@@ -7,7 +7,7 @@ const Ships = () => {
         fetch('https://api.spacexdata.com/v3/launches/')
             .then(value => value.json())
             .then(value => {
-                const filteredShips = value.filter(ship => new Date(ship.launch_year).getFullYear() !== 2020);
+                const filteredShips = value.filter(ship => (ship.launch_year) !== '2020');
                 setShips(filteredShips);
             })
     }, []);
