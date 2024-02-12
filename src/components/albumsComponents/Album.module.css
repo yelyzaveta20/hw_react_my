@@ -1,0 +1,15 @@
+.Album{
+    color: #0f6254;
+    font-family: Candara;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px #020246 solid;
+}
+.div{
+    display: flex;
+    width: 49vw;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+
+}

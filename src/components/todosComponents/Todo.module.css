@@ -1,0 +1,15 @@
+.Todo{
+    color: #411f1f;
+    font-family: MingLiU_HKSCS-ExtB;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px #5093c0 solid;
+}
+.div{
+    display: flex;
+    width: 49vw;
+    height: 4vh;
+    justify-content: center;
+    align-items: center;
+
+}

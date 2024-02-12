@@ -1,0 +1,25 @@
+.Comment{
+    color: #411f1f;
+    font-family: Consolas;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px #5093c0 solid;
+
+}
+.div{
+    display: flex;
+    width: 49vw;
+    height: 8vh;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    width:49.35vw;
+    height: 5vh;
+    background: #c995da;
+    border: none;
+    font-family: DialogInput;
+    font-size: 18px;
+
+}
