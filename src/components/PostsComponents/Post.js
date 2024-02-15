@@ -5,7 +5,7 @@ const Post = ({post}) => {
     const navigate =useNavigate()
     return (
         <div>
-        <div>title: {title} <button onClick={()=>navigate(`details`,{state:{id:id}})}>details</button></div>
+        <div>title: {title} <button onClick={()=>navigate(`details`,{state:{post}})}>details</button></div>
         </div>
     );
 };

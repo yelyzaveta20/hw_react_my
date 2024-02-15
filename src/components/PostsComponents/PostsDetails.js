@@ -5,13 +5,13 @@ import PostDetails from "./PostDetails";
 
 const PostsDetails = () => {
     const [postsDetails, setPostsDetails] = useState([])
-    const {state:{id}} = useLocation()
-    useEffect(() => {
-        usersService.getPost(id).then(({data})=>setPostsDetails(data))
-    }, []);
+    const {state:{post}} = useLocation()
+    // useEffect(() => {
+    //     usersService.getPost(id).then(({data})=>setPostsDetails(data))
+    // }, []);
     return (
         <div>
-            <PostDetails key={postsDetails.id} postsDetails={postsDetails}/>)
+            <PostDetails key={post.id} post={post}/>)
         </div>
     );
 };
