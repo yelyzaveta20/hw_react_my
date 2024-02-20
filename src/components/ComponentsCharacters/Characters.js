@@ -9,7 +9,7 @@ const Characters = () => {
     const {state:{charactersId}}=useLocation()
     useEffect(() => {
         charactersId.map(character=>chractersServise.getById(character).then(({data})=>setCharacters(prev=>[...prev,data])))
-    }, []);
+    }, [charactersId]);
 
     return (
         <div>

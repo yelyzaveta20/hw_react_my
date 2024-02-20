@@ -1,6 +1,5 @@
 import css from './Episode.module.css'
-import {NavLink, useNavigate} from "react-router-dom";
-import Characters from "../ComponentsCharacters/Characters";
+import {useNavigate} from "react-router-dom";
 const EpisodeRickAndMorti = ({episode}) => {
     let navigate = useNavigate();
     const {id,name, episode:episodeOn,characters}=episode

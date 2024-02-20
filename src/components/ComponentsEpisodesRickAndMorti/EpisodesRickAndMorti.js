@@ -14,7 +14,7 @@ const EpisodesRickAndMorti = () => {
             setPrevNext({prev: data.prev, next: data.next})
             console.log(data.results);
         })
-    }, [ query.get('page')]);
+    }, [ query]);
 
     const prev = () => {
         setQuery(prev => {
