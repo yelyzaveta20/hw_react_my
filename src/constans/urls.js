@@ -9,7 +9,7 @@ const urls={
     ,
     character:{
         base:character,
-        getEpisode:(episodeId)=>`${character}/`
+        getById:(id)=>`${character}/${id}`
     }
 
 }
