@@ -1,19 +1,20 @@
 import React, {useEffect, useState} from "react";
 import {chractersServise} from "../../services/chractersServise";
 import Character from "./Character";
+import {useLocation} from "react-router-dom";
 
 
-const Characters = ({charactersIdOne}) => {
+const Characters = () => {
     let [characters,setCharacters] = useState([]);
+    const {state:{charactersId}}=useLocation()
     useEffect(() => {
-        chractersServise.getById(charactersIdOne).then(({data})=>setCharacters(data))
+        charactersId.map(character=>chractersServise.getById(character).then(({data})=>setCharacters(prev=>[...prev,data])))
     }, []);
 
-    // const {id,name,image}=characters
     return (
         <div>
-            <Character characters={characters}/>
-            {/*{characters.map(character=><Character key={character.id} character={character}/>)}*/}
+            {characters.map(character=><Character key={character.id} characters={character}/>)}
+
         </div>
     );
 };

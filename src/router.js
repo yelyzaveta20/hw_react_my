@@ -13,7 +13,7 @@ const router=createBrowserRouter([
                 path:'episode', element: <PageEpisodesRickAndMorti/>
             },
             {
-                path:'character', element:<PageCharacters/>
+                path:'characters', element:<PageCharacters/>
             }
         ]}
 ])

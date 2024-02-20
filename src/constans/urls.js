@@ -4,7 +4,6 @@ const episode='/episode'
 const urls={
     episode:{
         base:episode,
-        // getById:(id)=>`${episode}/${id}`
     }
     ,
     character:{
