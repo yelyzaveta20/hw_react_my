@@ -8,7 +8,8 @@ const Characters = () => {
     let [characters,setCharacters] = useState([]);
     const {state:{charactersId}}=useLocation()
     useEffect(() => {
-        charactersId.map(character=>chractersServise.getById(character).then(({data})=>setCharacters(prev=>[...prev,data])))
+        chractersServise.getById(charactersId).then(({data})=>setCharacters(data))
+        // charactersId.map(character=>chractersServise.getById(character).then(({data})=>setCharacters(prev=>[...prev,data])))
     }, [charactersId]);
 
     return (
