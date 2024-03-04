@@ -32,7 +32,7 @@ const EpisodesRickAndMorti = () => {
     return (
         <div>
             {episodes.map(episode => <EpisodeRickAndMorti key={episode.id} episode={episode}/>)}
-            <button  onClick={prev}>prev</button>
+            <button onClick={prev}>prev</button>
             <button onClick={next}>next</button>
         </div>
     );
