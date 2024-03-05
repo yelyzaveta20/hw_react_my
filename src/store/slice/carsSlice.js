@@ -1,7 +1,9 @@
 import {createSlice} from "@reduxjs/toolkit";
 
 const initialState={
-    cars: []
+    cars: [],
+    carForUpdate: null,
+    carNew:null
 };
 const carsSlice= createSlice({
     name:'carsSlice',
@@ -10,6 +12,16 @@ const carsSlice= createSlice({
         setResponse:(state, action)=>{
            const {data}=action.payload;
            state.cars=data
+        }
+        ,
+        setUpdate:(state, action)=>{
+            const {data}=action.payload;
+            state.carForUpdate=data
+        }
+        ,
+        postCarNew:(state, action)=>{
+            const {data}=action.payload;
+            state.carNew=data
         }
 
     }

@@ -3,7 +3,8 @@ import {carsReducer} from "./slice/carsSlice";
 
 const store=configureStore({
     reducer:{
-        cars:carsReducer
+        cars:carsReducer,
+
     }
 })
 export {store}
