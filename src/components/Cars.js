@@ -10,7 +10,7 @@ const Cars = () => {
     // const [cars, setCars] = useState()
     useEffect(() => {
         carService.getAll().then(({data})=>dispatch(carsActions.setResponse({data})))
-    }, []);
+    }, [dispatch]);
 
     return (
         <div>
