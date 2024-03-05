@@ -9,6 +9,7 @@ const carsSlice= createSlice({
     name:'carsSlice',
     initialState,
     reducers:{
+
         setResponse:(state, action)=>{
            const {data}=action.payload;
            state.cars=data
@@ -18,8 +19,8 @@ const carsSlice= createSlice({
             const {data}=action.payload;
             state.carForUpdate=data
         }
-        ,
-        postCarNew:(state, action)=>{
+
+        ,postCarNew:(state, action)=>{
             const {data}=action.payload;
             state.carNew=data
         }
