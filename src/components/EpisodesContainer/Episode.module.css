@@ -1,0 +1,14 @@
+.Episode{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 24.5vw;
+    height: 15vh;
+    border: black 1px solid;
+}
+.div{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
